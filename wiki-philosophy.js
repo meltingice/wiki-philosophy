@@ -42,6 +42,12 @@ function search (word) {
 			// Avoid language reference links
 			if (href.match(/Wikipedia:/i)) { return true; }
 			
+			// Avoid file links
+			if (href.match(/File:/i)) { return true; }
+			
+			// Avoid direct file links
+			if (href.indexOf(".") !== -1) { return true;}
+			
 			// Avoid page anchor links
 			if (href.match(/#/)) { return true; }
 			
