@@ -10,3 +10,8 @@ This is a simple script that takes a single input word and finds how many clicks
 # How to Use
 
 	node wiki-philosophy.js [search]
+	
+# Bugs
+
+* Tendency to follow links to Greek_language due to etymology instead of actual content.
+* Some disambiguation pages can cause infinite search loops.
