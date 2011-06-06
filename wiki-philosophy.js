@@ -62,6 +62,11 @@ function search (word) {
 			} else {
 				// Hopefully a disambuation page, grab the first entry
 				link = $("#bodyContent > ul li a:first").attr('href');
+				
+				if (!link) {
+					// sadface
+					return console.log("ERROR: could not find a suitable word, exiting.");
+				}
 			}
 		}
 		
